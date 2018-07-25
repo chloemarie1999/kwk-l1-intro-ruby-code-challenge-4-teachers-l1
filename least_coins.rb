@@ -35,8 +35,7 @@ def least_coins(cents)
   end
   
   puts coins
-# puts least_coins(29)
-  
+
 end
 
 least_coins(29)
