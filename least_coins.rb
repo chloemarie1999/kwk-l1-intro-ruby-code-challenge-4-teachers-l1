@@ -16,7 +16,7 @@ def least_coins(cents)
     coins[:dimes]=0
   elsif dimes!=0 
     coins[:dimes]=dimes
-    cents=cents=dimes*10
+    cents=cents-dimes*10
   end
   
   nickles=cents/5 
@@ -34,7 +34,9 @@ def least_coins(cents)
     coins[:pennies]=pennies
   end
   
-  puts coins
-  # puts least_coins(29)
-  
+  return coins
+  coins
+
 end
+
+least_coins(500)
